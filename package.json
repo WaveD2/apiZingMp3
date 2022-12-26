@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "ok",
   "main": "index.js",
+  "engines": {
+    "node": "14.x"
+  },
   "scripts": {
     "start": "nodemon index.js"
   },
@@ -16,13 +19,5 @@
   },
   "devDependencies": {
     "nodemon": "^2.0.20"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/hip06/api-zingmp3-public.git"
-  },
-  "bugs": {
-    "url": "https://github.com/hip06/api-zingmp3-public/issues"
-  },
-  "homepage": "https://github.com/hip06/api-zingmp3-public#readme"
+  }
 }
