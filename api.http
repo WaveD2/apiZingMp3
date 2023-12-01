@@ -1,2 +1,1 @@
-# GET http://localhotst:5000/api/home?
-GET  https://waved-api-zingmp3.vercel.app/api/home?
+GET http://localhost:5000/api/home

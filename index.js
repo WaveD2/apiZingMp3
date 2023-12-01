@@ -5,7 +5,6 @@ const app = express();
 const cors = require("cors");
 const port = process.env.PORT || 3000;
 
-app.use(cors({ origin: "*" }));
 // Page Home
 app.get("/", (req, res) => {
   res.send("SERVER ON");
@@ -13,7 +12,7 @@ app.get("/", (req, res) => {
 
 // ZingMp3Router
 const ZingMp3Router = require("./src/routes/ZingRouter");
-app.use("/api", ZingMp3Router);
+app.use("/api", cors({ origin: "*" }), ZingMp3Router);
 
 // Page Error
 app.get("*", (req, res) => {
